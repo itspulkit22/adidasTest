@@ -1,0 +1,84 @@
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": "25",
+    "name": "Green",
+    "status": "available",
+    "category": {
+        "secId": "7",
+        "secName": "String"
+    },
+    "photoUrls": [
+        "String"
+    ],
+    "tags": [
+        {
+            "secId": "7",
+            "secName": "String"
+        }
+    ]
+}
+HTTP/1.1 200 OK
+Date: Sun, 18 Oct 2020 18:56:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 25,
+    "category": {
+        "id": 0
+    },
+    "name": "Green",
+    "photoUrls": [
+        "String"
+    ],
+    "tags": [
+        {
+            "id": 0
+        }
+    ],
+    "status": "available"
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/25
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+status=sold
+HTTP/1.1 200 OK
+Date: Sun, 18 Oct 2020 18:56:02 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "25"
+}

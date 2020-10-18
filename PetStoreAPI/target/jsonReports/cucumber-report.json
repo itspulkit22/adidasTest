@@ -1,0 +1,157 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-18T18:55:46.611Z",
+        "line": 22,
+        "name": "Add new Pets to Demo Pet Store",
+        "description": "",
+        "id": "validation-of-rest-api-for-demo-pet-store;add-new-pets-to-demo-pet-store;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1355092148,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Create New Pet Payload with \"25\" \"Green\" \"available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Green\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"available\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefination.create_New_Pet_Payload_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7430010546,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User calls \"AddNewPetAPI\" of Demo Pet Store",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddNewPetAPI",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefination.user_calls_API(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 472673741,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verify \"25\" \"Green\" \"available\" of the Pet in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Green\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"available\"",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefination.user_verify_of_the_Pet_in_response(String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NewPet"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-18T18:55:55.882Z",
+        "line": 26,
+        "name": "Update existing Pet in Demo Pet Store",
+        "description": "",
+        "id": "validation-of-rest-api-for-demo-pet-store;update-existing-pet-in-demo-pet-store",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4290376,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Create update Pet Payload",
+            "match": {
+              "location": "StepDefination.create_Update_Pet_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1645753119,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User calls \"UpdatePetAPI\" of Demo Pet Store",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UpdatePetAPI",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefination.user_calls_API(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19950598,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User verify Message response",
+            "match": {
+              "location": "StepDefination.user_verify_message_in_response()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UpdatePet"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of REST API for DEMO PET STORE",
+    "description": "",
+    "id": "validation-of-rest-api-for-demo-pet-store",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/validatePets.feature",
+    "tags": []
+  }
+]

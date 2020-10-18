@@ -1,0 +1,17 @@
+{
+	"config": 
+	{
+		"global": 
+		{
+			"name"		: 		 "pulkit",	
+			"country"	: 		"India",
+			"city"		: 		 "GGN",
+			"card"		: 		 "12345678",
+			"month"		: 		 "09",
+			"year"		: 		 "2020" ,
+			"url"		:		 "https://www.demoblaze.com/index.html",
+			"browser"   :  		 "chrome"
+			
+		}
+	}
+}

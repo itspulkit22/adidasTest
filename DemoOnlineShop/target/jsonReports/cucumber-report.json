@@ -1,0 +1,238 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-18T18:56:38.972Z",
+        "before": [
+          {
+            "result": {
+              "duration": 32867031183,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Purchase Products from Demo Online Shop",
+        "description": "",
+        "id": "web-automation-for-demo-online-shop;purchase-products-from-demo-online-shop;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2208303485,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.wrapUp(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 73746355,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Launches the Online Shop URL",
+            "match": {
+              "location": "StepDefOnlineShop.user_Launch_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53438603,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is navigated to home page",
+            "match": {
+              "location": "StepDefOnlineShop.home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27012461426,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates through the product \"Phones\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Phones\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefOnlineShop.product_navigate(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1916103053,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates through the product \"Monitors\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Monitors\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefOnlineShop.product_navigate(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1231458625,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User navigates through the product \"Laptops\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Laptops\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefOnlineShop.product_navigate(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11499244843,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Adds \"Sony vaio i5\" in Cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sony vaio i5\"",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefOnlineShop.user_adds(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1907630268,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User navigates through the product \"Laptops\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Laptops\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefOnlineShop.product_navigate(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14992356882,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Adds \"Dell i7 8gb\" in Cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dell i7 8gb\"",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefOnlineShop.user_adds(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12421001208,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User removes \"Dell i7 8gb\" from Cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dell i7 8gb\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefOnlineShop.user_removes(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211099968,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User places the order",
+            "match": {
+              "location": "StepDefOnlineShop.user_place()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Name and Creditcard.}\n  (Session info: chrome\u003d86.0.4240.75)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds: null\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027HP-HP\u0027, ip: \u0027172.16.23.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\Hp\\AppData\\Local\\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:30602}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 86.0.4240.75, webStorageEnabled: true}\nSession ID: b8636e8a86d8363867a788cd92e8dff5\n*** Element info: {Using\u003dxpath, value\u003d//h2[contains(text(), \u0027purchase\u0027)]//../p}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getText(Unknown Source)\r\n\tat com.shop.pages.HomePage.fillDetails(HomePage.java:135)\r\n\tat Steps.StepDefOnlineShop.user_details(StepDefOnlineShop.java:51)\r\n\tat ✽.User completes the web form and clicks Purchase(file:src/test/java/features/onlineShopping.feature:15)\r\n",
+              "duration": 1512463273,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User completes the web form and clicks Purchase",
+            "match": {
+              "location": "StepDefOnlineShop.user_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38999,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User verifies the purchase amount",
+            "match": {
+              "location": "StepDefOnlineShop.user_verify_details()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC1"
+          }
+        ]
+      }
+    ],
+    "name": "Web Automation for DEMO ONLINE SHOP",
+    "description": "",
+    "id": "web-automation-for-demo-online-shop",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/onlineShopping.feature",
+    "tags": []
+  }
+]

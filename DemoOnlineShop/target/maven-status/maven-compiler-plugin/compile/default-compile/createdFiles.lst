@@ -1,0 +1,6 @@
+com\shop\constants\Constants.class
+com\shop\browser\Driver.class
+com\shop\pages\BasePage.class
+com\shop\utils\JsonParser.class
+com\shop\browser\DriverManager.class
+com\shop\pages\HomePage.class
